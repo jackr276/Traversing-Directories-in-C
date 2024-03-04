@@ -1,6 +1,7 @@
 /**
  * Author: Jack Robbins
- * Homework 03, Problem 3
+ * This C program recursively goes through a directory's subdirectory's, counting the number of lines in
+ * all of the .txt files in these directories
  */
 
 #include <stdio.h>
