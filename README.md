@@ -1,5 +1,5 @@
 # Traversing Directories in C
-Author: [Jack Robbins](https://www.github.com.jackr276)
+Author: [Jack Robbins](https://www.github.com/jackr276)
 
 This project contains one C program, [count_lines.c](https://github.com/jackr276/Traversing-Directories-in-C/blob/main/src/count_lines.c), that takes in a path to a directory as input,
 and then opens that directory, if possible, and recursively, in a depth-first search manner, goes through every sub-directory of that directory. Simply to show functionality and demonstrate the potential
