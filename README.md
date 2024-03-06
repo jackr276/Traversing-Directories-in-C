@@ -6,15 +6,18 @@ and then opens that directory, if possible, and recursively, in a depth-first se
 usefulness of this kind of directory traversal, this program also counts the number of lines in any and all text(.txt extension) files under said directory and any of its subdirectories.
 
 ### Running this program
-For convenience, a [runner script](https://github.com/jackr276/Traversing-Directories-in-C/blob/main/src/run.sh) has been provided that compiles and runs the script all at once. To run it, download both files under the
-[src](https://github.com/jackr276/Traversing-Directories-in-C/blob/main/src) directory, navigate to where they've been downloaded, and run:
-```shell
-./run.sh count_lines.c
+For convenience, a runner script [run.sh](https://github.com/jackr276/Traversing-Directories-in-C/blob/main/src/run.sh) has been provided that compiles the program, takes in user input, and runs the program all at once. An example of how to use it is below.
+
+>[!NOTE]
+>After downloading run.sh, be sure to grant executable permissions by running `chmod +x run.sh`
+
+Example: Counting all of the lines in all .txt files under your Documents folder on a Linux system
+```console
+example@bash:~$ ./run.sh count_lines.c
+If your program requires input, enter it here: /home/<your_username>/Documents
 ```
-The script will prompt you for program input. The input for this program is the path to a directory, so the input to the runner script would also be the path to the directory you wish to search.
-```shell
-If program requires input, enter it here: <relative-path-to-directory>
-```
+
+So long as the pathname provided to the program is a valid path to a directory, the program will attempt to traverse said directory.
 
 >[!Warning]
 >Since this script provides a recursive depth-first traversal solution, attempting to run the script on the root directory: `/` or any other large directories that have subdirectories that each have
